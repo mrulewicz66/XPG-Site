@@ -53,3 +53,6 @@ footer a { color: var(--muted); margin-right: 16px; }
   nav a[href="./#how"] { display: none; }
   .btn + .btn { margin: 10px 0 0; }
 }
+
+.install { margin: 12px 0; padding: 10px 12px; background: #07080c; border: 1px solid var(--line); border-radius: 8px; font: 13px/1.4 ui-monospace, Consolas, monospace; color: var(--accent); white-space: pre-wrap; overflow-wrap: anywhere; }
+.box p a { color: var(--accent); font-weight: 600; }
