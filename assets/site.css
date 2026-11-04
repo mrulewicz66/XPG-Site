@@ -12,7 +12,7 @@ header.bar .wrap { display: flex; align-items: center; justify-content: space-be
 .mark img { width: 30px; height: 30px; border-radius: 8px; }
 .mark b { font-weight: 800; }
 .mark span { color: var(--accent); }
-nav a { color: var(--muted); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 14px; }
+nav a { white-space: nowrap; color: var(--muted); text-decoration: none; margin-left: 20px; font-weight: 600; font-size: 14px; }
 nav a:hover { color: var(--text); }
 .hero { position: relative; overflow: hidden; min-height: 520px; display: grid; place-items: center; text-align: center; border-bottom: 1px solid var(--line); }
 .hero > img.bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
@@ -49,6 +49,7 @@ footer a { color: var(--muted); margin-right: 16px; }
 .doc th { color: var(--muted); font-weight: 600; }
 @media (max-width: 600px) {
   .hero h1 { font-size: 32px; }
-  nav a { margin-left: 12px; }
+  nav a { margin-left: 12px; white-space: nowrap; }
+  nav a[href="./#how"] { display: none; }
   .btn + .btn { margin: 10px 0 0; }
 }
