@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="assets/site.css" />
+  <title>XGP Privacy</title>
+  <meta name="description" content="What XGP stores about players, and how it is protected." />
+</head>
+<body>
+<header class="bar"><div class="wrap">
+  <a class="mark" href="./"><img src="assets/logo.png" alt="" /><b>X<span>GP</span></b></a>
+  <nav><a href="./#how">How it works</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main class="doc">
+  <h1>Privacy</h1>
+  <p class="updated">Testnet preview · Last updated November 4, 2026</p>
+  <p>XGP is built so that we hold as little about you as possible. You sign in with your XRP Ledger account through Xaman; we never see your keys, and we don't ask for a password, email address or payment card.</p>
+
+  <h2>What we store</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr><td>Your XRP Ledger address</td><td>It is your account on XGP.</td></tr>
+    <tr><td>Display name, profile picture, bio</td><td>Only if you add them, to show on your profile.</td></tr>
+    <tr><td>Privacy choices</td><td>Who can see your profile and activity: everyone, friends or only you.</td></tr>
+    <tr><td>Friends, blocks and chat messages</td><td>To run friends and chat. Chat is between friends only.</td></tr>
+    <tr><td>Activity (items earned, bought, sold, games played)</td><td>For your profile and your friends' feeds, as your privacy choices allow.</td></tr>
+    <tr><td>Signed-in devices</td><td>So you can see them and sign any of them out.</td></tr>
+    <tr><td>Market listings and price alerts</td><td>To run the market and tell you when an item you watch is listed.</td></tr>
+    <tr><td>A security log (sign-ins, profile changes, trades)</td><td>To protect your account and investigate problems.</td></tr>
+  </table>
+
+  <h2>What lives on the XRP Ledger</h2>
+  <p>Your items, game licenses, balances and trades are recorded on the public XRP Ledger, not on our servers. Anyone can see ledger records for an address. Our privacy settings control what XGP shows, not what the ledger shows.</p>
+
+  <h2>Profile pictures</h2>
+  <p>Uploaded pictures are resized and re-encoded before we store them, which removes hidden data such as camera location.</p>
+
+  <h2>How it's protected</h2>
+  <p>Data is stored in a Postgres database with encrypted connections in production. Sessions can be revoked at any time. The desktop client keeps your sign-in encrypted with your operating system's keychain. Requests are rate-limited, and every ledger transaction you approve is built by our server and shown to you in Xaman before you sign.</p>
+
+  <h2>Sharing</h2>
+  <p>We don't sell your data. We share it only with the services needed to run XGP: Xaman for sign-in and signing, and the XRP Ledger for transactions.</p>
+
+  <h2>Questions or removal</h2>
+  <p>To ask a question or have your profile, messages and activity removed, <a href="https://github.com/mrulewicz66/XGP/issues">open an issue on GitHub</a>. Records on the XRP Ledger can't be removed by anyone.</p>
+</main>
+<footer><div class="wrap">
+  <a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/mrulewicz66/XGP">GitHub</a>
+  <div style="margin-top:10px">XGP is in a testnet preview. Nothing here uses real money yet.</div>
+</div></footer>
+</body>
+</html>
